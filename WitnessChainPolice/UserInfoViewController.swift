@@ -20,6 +20,8 @@ class UserInfoViewController: UIViewController {
     
     @IBOutlet weak var AddressField: UITextField!
     
+    @IBOutlet weak var JurisdictionField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
@@ -33,6 +35,8 @@ class UserInfoViewController: UIViewController {
         
         AddressField.text = "1201 Mass Ave"
         
+        JurisdictionField.text = "Cambridge PD"
+        
     }
     
     @IBAction func submit(_ sender: Any) {
@@ -45,7 +49,8 @@ class UserInfoViewController: UIViewController {
             "publickey": PublicKeyField.text!,
             "privatekey": PrivateKeyField.text!,
             "address": AddressField.text!,
-            "permission": 1
+            "jurisdiction": JurisdictionField.text!,
+            "permission": 2
             ])
         self.performSegue(withIdentifier: "userinfotohome", sender: nil)
         
