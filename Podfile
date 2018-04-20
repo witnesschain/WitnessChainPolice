@@ -8,6 +8,7 @@ target 'WitnessChainPolice' do
 
   pod 'Firebase/Core'
   pod 'FirebaseUI/Auth'
+  pod 'FirebaseUI/Storage'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'Alamofire'

@@ -10,8 +10,8 @@
 		32F27D949E2435F858B9EF5E /* Pods_WitnessChainPoliceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80555486C5D75197FCC035D /* Pods_WitnessChainPoliceUITests.framework */; };
 		4C8C47CC0DCAC5EC0D64E500 /* Pods_WitnessChainPolice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC3E184A3F81C5B05A4A391 /* Pods_WitnessChainPolice.framework */; };
 		FC289A1B20812145003A7448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC289A1A20812145003A7448 /* AppDelegate.swift */; };
-		FC289A1D20812145003A7448 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC289A1C20812145003A7448 /* FirstViewController.swift */; };
-		FC289A1F20812145003A7448 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC289A1E20812145003A7448 /* SecondViewController.swift */; };
+		FC289A1D20812145003A7448 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC289A1C20812145003A7448 /* SettingsViewController.swift */; };
+		FC289A1F20812145003A7448 /* ListEvidenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC289A1E20812145003A7448 /* ListEvidenceViewController.swift */; };
 		FC289A2220812145003A7448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC289A2020812145003A7448 /* Main.storyboard */; };
 		FC289A2420812147003A7448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC289A2320812147003A7448 /* Assets.xcassets */; };
 		FC289A2720812147003A7448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC289A2520812147003A7448 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,9 @@
 		FC289A3F208123FE003A7448 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC289A3E208123FE003A7448 /* UserInfoViewController.swift */; };
 		FC289A412081348E003A7448 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC289A402081348E003A7448 /* GoogleService-Info.plist */; };
 		FC289A422081348E003A7448 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC289A402081348E003A7448 /* GoogleService-Info.plist */; };
+		FCC0931E2088343500440C19 /* ApprovedListEvidenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0931D2088343500440C19 /* ApprovedListEvidenceViewController.swift */; };
+		FCC0932020883C9000440C19 /* Evidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0931F20883C9000440C19 /* Evidence.swift */; };
+		FCC0932220883DC300440C19 /* EvidenceListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0932120883DC300440C19 /* EvidenceListViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +44,8 @@
 		E80555486C5D75197FCC035D /* Pods_WitnessChainPoliceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WitnessChainPoliceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC289A1720812145003A7448 /* WitnessChainPolice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WitnessChainPolice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC289A1A20812145003A7448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC289A1C20812145003A7448 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FC289A1E20812145003A7448 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FC289A1C20812145003A7448 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FC289A1E20812145003A7448 /* ListEvidenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEvidenceViewController.swift; sourceTree = "<group>"; };
 		FC289A2120812145003A7448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC289A2320812147003A7448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC289A2620812147003A7448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +56,9 @@
 		FC289A3C208123EE003A7448 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		FC289A3E208123FE003A7448 /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		FC289A402081348E003A7448 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCC0931D2088343500440C19 /* ApprovedListEvidenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovedListEvidenceViewController.swift; sourceTree = "<group>"; };
+		FCC0931F20883C9000440C19 /* Evidence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evidence.swift; sourceTree = "<group>"; };
+		FCC0932120883DC300440C19 /* EvidenceListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvidenceListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,12 +126,15 @@
 			children = (
 				FC289A1A20812145003A7448 /* AppDelegate.swift */,
 				FC289A402081348E003A7448 /* GoogleService-Info.plist */,
-				FC289A1C20812145003A7448 /* FirstViewController.swift */,
+				FC289A1C20812145003A7448 /* SettingsViewController.swift */,
 				FC289A3C208123EE003A7448 /* AuthViewController.swift */,
 				FC289A3E208123FE003A7448 /* UserInfoViewController.swift */,
-				FC289A1E20812145003A7448 /* SecondViewController.swift */,
+				FC289A1E20812145003A7448 /* ListEvidenceViewController.swift */,
+				FCC0931D2088343500440C19 /* ApprovedListEvidenceViewController.swift */,
 				FC289A2020812145003A7448 /* Main.storyboard */,
+				FCC0932120883DC300440C19 /* EvidenceListViewCell.swift */,
 				FC289A2320812147003A7448 /* Assets.xcassets */,
+				FCC0931F20883C9000440C19 /* Evidence.swift */,
 				FC289A2520812147003A7448 /* LaunchScreen.storyboard */,
 				FC289A2820812147003A7448 /* Info.plist */,
 			);
@@ -290,6 +299,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftLocation/SwiftLocation.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -300,6 +310,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLocation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -336,10 +347,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC289A3D208123EE003A7448 /* AuthViewController.swift in Sources */,
-				FC289A1F20812145003A7448 /* SecondViewController.swift in Sources */,
+				FC289A1F20812145003A7448 /* ListEvidenceViewController.swift in Sources */,
 				FC289A3F208123FE003A7448 /* UserInfoViewController.swift in Sources */,
+				FCC0932020883C9000440C19 /* Evidence.swift in Sources */,
 				FC289A1B20812145003A7448 /* AppDelegate.swift in Sources */,
-				FC289A1D20812145003A7448 /* FirstViewController.swift in Sources */,
+				FCC0931E2088343500440C19 /* ApprovedListEvidenceViewController.swift in Sources */,
+				FC289A1D20812145003A7448 /* SettingsViewController.swift in Sources */,
+				FCC0932220883DC300440C19 /* EvidenceListViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,10 +518,7 @@
 				DEVELOPMENT_TEAM = YHQKGLGHHD;
 				INFOPLIST_FILE = WitnessChainPolice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.harvard.WitnessChainPolice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -524,10 +535,7 @@
 				DEVELOPMENT_TEAM = YHQKGLGHHD;
 				INFOPLIST_FILE = WitnessChainPolice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.harvard.WitnessChainPolice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -543,11 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SV49PXJHZG;
 				INFOPLIST_FILE = WitnessChainPoliceUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.harvard.WitnessChainPoliceUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -564,11 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SV49PXJHZG;
 				INFOPLIST_FILE = WitnessChainPoliceUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.harvard.WitnessChainPoliceUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
