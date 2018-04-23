@@ -20,6 +20,8 @@
 		FC289A3F208123FE003A7448 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC289A3E208123FE003A7448 /* UserInfoViewController.swift */; };
 		FC289A412081348E003A7448 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC289A402081348E003A7448 /* GoogleService-Info.plist */; };
 		FC289A422081348E003A7448 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC289A402081348E003A7448 /* GoogleService-Info.plist */; };
+		FC5C7B49208C3B5B00A372BF /* ViewEvidenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7B48208C3B5B00A372BF /* ViewEvidenceController.swift */; };
+		FC5C7B4B208D525C00A372BF /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C7B4A208D525B00A372BF /* ProgressHUD.swift */; };
 		FCC0931E2088343500440C19 /* ApprovedListEvidenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0931D2088343500440C19 /* ApprovedListEvidenceViewController.swift */; };
 		FCC0932020883C9000440C19 /* Evidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0931F20883C9000440C19 /* Evidence.swift */; };
 		FCC0932220883DC300440C19 /* EvidenceListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC0932120883DC300440C19 /* EvidenceListViewCell.swift */; };
@@ -56,6 +58,8 @@
 		FC289A3C208123EE003A7448 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		FC289A3E208123FE003A7448 /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		FC289A402081348E003A7448 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FC5C7B48208C3B5B00A372BF /* ViewEvidenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEvidenceController.swift; sourceTree = "<group>"; };
+		FC5C7B4A208D525B00A372BF /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 		FCC0931D2088343500440C19 /* ApprovedListEvidenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovedListEvidenceViewController.swift; sourceTree = "<group>"; };
 		FCC0931F20883C9000440C19 /* Evidence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evidence.swift; sourceTree = "<group>"; };
 		FCC0932120883DC300440C19 /* EvidenceListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvidenceListViewCell.swift; sourceTree = "<group>"; };
@@ -132,9 +136,11 @@
 				FC289A1E20812145003A7448 /* ListEvidenceViewController.swift */,
 				FCC0931D2088343500440C19 /* ApprovedListEvidenceViewController.swift */,
 				FC289A2020812145003A7448 /* Main.storyboard */,
+				FC5C7B48208C3B5B00A372BF /* ViewEvidenceController.swift */,
 				FCC0932120883DC300440C19 /* EvidenceListViewCell.swift */,
 				FC289A2320812147003A7448 /* Assets.xcassets */,
 				FCC0931F20883C9000440C19 /* Evidence.swift */,
+				FC5C7B4A208D525B00A372BF /* ProgressHUD.swift */,
 				FC289A2520812147003A7448 /* LaunchScreen.storyboard */,
 				FC289A2820812147003A7448 /* Info.plist */,
 			);
@@ -299,6 +305,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftLocation/SwiftLocation.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -310,6 +317,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLocation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -347,12 +355,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC289A3D208123EE003A7448 /* AuthViewController.swift in Sources */,
+				FC5C7B49208C3B5B00A372BF /* ViewEvidenceController.swift in Sources */,
 				FC289A1F20812145003A7448 /* ListEvidenceViewController.swift in Sources */,
 				FC289A3F208123FE003A7448 /* UserInfoViewController.swift in Sources */,
 				FCC0932020883C9000440C19 /* Evidence.swift in Sources */,
 				FC289A1B20812145003A7448 /* AppDelegate.swift in Sources */,
 				FCC0931E2088343500440C19 /* ApprovedListEvidenceViewController.swift in Sources */,
 				FC289A1D20812145003A7448 /* SettingsViewController.swift in Sources */,
+				FC5C7B4B208D525C00A372BF /* ProgressHUD.swift in Sources */,
 				FCC0932220883DC300440C19 /* EvidenceListViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,7 +528,10 @@
 				DEVELOPMENT_TEAM = YHQKGLGHHD;
 				INFOPLIST_FILE = WitnessChainPolice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.harvard.WitnessChainPolice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -535,7 +548,10 @@
 				DEVELOPMENT_TEAM = YHQKGLGHHD;
 				INFOPLIST_FILE = WitnessChainPolice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.harvard.WitnessChainPolice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -551,7 +567,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SV49PXJHZG;
 				INFOPLIST_FILE = WitnessChainPoliceUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.harvard.WitnessChainPoliceUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -568,7 +588,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SV49PXJHZG;
 				INFOPLIST_FILE = WitnessChainPoliceUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.harvard.WitnessChainPoliceUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

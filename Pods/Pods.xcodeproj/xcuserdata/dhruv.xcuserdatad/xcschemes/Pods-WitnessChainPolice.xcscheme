@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "0940"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C6B6537C7211B69FAB11344F8AC9F8AA"
+               BlueprintIdentifier = "E2E720D0BE063DA0DD18F9BAE1026758"
                BuildableName = "Pods_WitnessChainPolice.framework"
                BlueprintName = "Pods-WitnessChainPolice"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6B6537C7211B69FAB11344F8AC9F8AA"
+            BlueprintIdentifier = "E2E720D0BE063DA0DD18F9BAE1026758"
             BuildableName = "Pods_WitnessChainPolice.framework"
             BlueprintName = "Pods-WitnessChainPolice"
             ReferencedContainer = "container:Pods.xcodeproj">

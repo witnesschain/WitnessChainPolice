@@ -8,13 +8,20 @@
 
 class Evidence {
     
-    var name: String?
     var loc: (Float, Float)?
-    var image: String?
+    var images: Array<String>?
+    var time: Int?
+    var address: String?
+    var price: Int?
+    var receiver: String?
     
-    init(name: String?, loc: (Float, Float)?, image: String?) {
-        self.name = name
+    init(loc: (Float, Float)?, images: Array<String>?, time: Int?, address: String?, price: Int?, receiver: String?) {
         self.loc = loc
-        self.image = image
+        self.images = images
+        self.time = time
+        self.address = address
+        self.price = price
+        self.receiver = receiver
+        
     }
 }
