@@ -44,7 +44,7 @@ class ViewEvidenceController: UIViewController {
         self.view.addSubview(progressHUD)
         
         TimeLabel.text = formatter.string(from: Date(timeIntervalSince1970: TimeInterval(Float(evidence!.time!)/10000)))
-        LocLabel.text = "\(String(describing: evidence!.loc?.0)), \(String(describing: evidence!.loc?.1))"
+        LocLabel.text = "\(String(describing: evidence!.loc?.0 ?? 0.0)), \(String(describing: evidence!.loc?.1 ?? 0.0))"
         
         let placeholderImage = UIImage(named: "placeholder.jpg")
         let storageRef = self.storage.reference().child("evidence")
