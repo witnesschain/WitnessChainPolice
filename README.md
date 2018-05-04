@@ -28,11 +28,11 @@ Replace this string with your address that was given through your server termina
 
 The app begins with a login screen. Enter your credentials, and create an account if you do not already have one.
 
-<TODO: Add picture of login screen>
+![Login Screen](images/signin.png)
 
 Then, link your account to your Ethereum public address. This will ensure your wallet is the same as your public one, if you already have one.
 
-<TODO: Add picture of public address screen>
+![Public Key Screen](images/publickey.png)
 
 Now, you should have arrived at the evidence screen. Here, you can view evidence submitted to your police jurisdiction. As an officer, you may scroll through the evidence and select one that seems like a ticket could be valid.
 
