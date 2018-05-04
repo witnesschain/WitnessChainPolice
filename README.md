@@ -48,3 +48,7 @@ On that page, you can see blurred versions of all submitted evidence as well as 
 ![View Evidence](images/viewevidence.png)
 
 From there, you can switch to the Approved tab and view the purchased evidence files, gaining access to the "clear" versions of the images.
+
+## Files and Folders
+
+The real code behind this app is in the `WitnessChainPolice` folder. Images and other assets used in the app are in `WitnessChainPolice/Assets.xcassets`.
