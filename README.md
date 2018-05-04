@@ -36,10 +36,10 @@ Then, link your account to your Ethereum public address. This will ensure your w
 
 Now, you should have arrived at the evidence screen. Here, you can view evidence submitted to your police jurisdiction. As an officer, you may scroll through the evidence and select one that seems like a ticket could be valid.
 
-<TODO: Add picture of evidence screen, pointing to next screen>
+![List Evidence](images/listevidence.png)
 
 On that page, you can see all of the blurred versions of the evidence as well as some location and time metadata. Should you choose to approve those pictures and purchase the evidence, you may tap the "Approve and Purchase" button, which will pay the submitter of the evidence.
 
-<TODO: Add picture of evidence view screen, pointing to next screen>
+![View Evidence](images/viewevidence.png)
 
 From there, you can switch to the approved tab and view the purchased evidence files, gaining access to the "clear" versions of the images.
