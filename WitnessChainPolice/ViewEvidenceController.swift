@@ -43,12 +43,12 @@ class ViewEvidenceController: UIViewController {
         let progressHUD = ProgressHUD(text: "Loading")
         self.view.addSubview(progressHUD)
         
-        TimeLabel.text = formatter.string(from: Date(timeIntervalSince1970: TimeInterval(Float(evidence!.time!)/10000)))
-        LocLabel.text = "\(String(describing: evidence!.loc?.0 ?? 0.0)), \(String(describing: evidence!.loc?.1 ?? 0.0))"
+        TimeLabel.text = formatter.string(from: Date(timeIntervalSince1970: TimeInterval(Float(evidence!.time!))))
+        LocLabel.text = "Location: \(String(describing: evidence!.loc?.0 ?? 0.0)), \(String(describing: evidence!.loc?.1 ?? 0.0))"
         
         let placeholderImage = UIImage(named: "placeholder.jpg")
         let storageRef = self.storage.reference().child("evidence")
-        
+
         ref = Database.database().reference()
         
         if(source == "approved"){
@@ -69,24 +69,21 @@ class ViewEvidenceController: UIViewController {
                 if let json = response.result.value as? [String: Array<String>] {
                     print("JSON: \(json)") // serialized json response
                     var imgSource : [SDWebImageSource] = []
-
+                    
                     for img in json["images"]! {
-                        let reference = storageRef.child(img)
-                        print(img)
-                        self.ImageView.sd_setImage(with: reference, placeholderImage: placeholderImage)
-                        reference.downloadURL { url, error in
-                            if let error = error {
-                                // Handle any errors
-                                print("error: \(error)")
-                            } else {
-                                // Get the download URL for 'images/stars.jpg'
-                                imgSource.append(SDWebImageSource(url: url!))
-                                print("URL: \(String(describing: url))")
-                                print("\(imgSource)")
-                                self.slideshow.setImageInputs(imgSource)
-                            }
+                        print("img: \(img)")
+                        
+                        if img == "" {
+                            continue
                         }
-
+                        
+                        let reference = self.storage.reference().child("evidence/\(img)")
+                        
+                        let ref_url = URL(string: "https://firebasestorage.googleapis.com/v0/b/witnesschain.appspot.com/o/evidence%2F\(img)?alt=media")
+                        imgSource.append(SDWebImageSource(url: ref_url!))
+                        print("URL: \(String(describing: ref_url))")
+                        print("\(imgSource)")
+                        self.slideshow.setImageInputs(imgSource)
                     }
                     
                 }
@@ -98,24 +95,24 @@ class ViewEvidenceController: UIViewController {
         
             var imgSource : [SDWebImageSource] = []
             
+            var reference : StorageReference? = nil
+            
+            var ref_url : URL? = nil
+            
             for img in evidence!.images! {
-                let reference = storageRef.child(img)
-                print(img)
-                ImageView.sd_setImage(with: reference, placeholderImage: placeholderImage)
-                reference.downloadURL { url, error in
-                    if let error = error {
-                        // Handle any errors
-                        print("error: \(error)")
-                    } else {
-                        // Get the download URL for 'images/stars.jpg'
-                        imgSource.append(SDWebImageSource(url: url!))
-                        print("URL: \(String(describing: url))")
-                        print("\(imgSource)")
-                        self.slideshow.setImageInputs(imgSource)
-                    }
-                }
+
+                print("img: \(img)")
+                
+                reference = self.storage.reference().child("evidence/\(img)")
+                
+                ref_url = URL(string: "https://firebasestorage.googleapis.com/v0/b/witnesschain.appspot.com/o/evidence%2F\(img)?alt=media")
+                imgSource.append(SDWebImageSource(url: ref_url!))
+                print("URL: \(String(describing: ref_url))")
+                print("\(imgSource)")
+                self.slideshow.setImageInputs(imgSource)
                 
             }
+            self.slideshow.setImageInputs(imgSource)
             progressHUD.hide()
         }
         

@@ -75,7 +75,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - FirebaseUI/Auth
   - FirebaseUI/Storage
-  - ImageSlideshow (~> 1.5)
+  - ImageSlideshow
   - ImageSlideshow/SDWebImage
   - SwiftLocation
 
@@ -118,6 +118,6 @@ SPEC CHECKSUMS:
   SwiftLocation: a3c3bc2023118171ef3572188a31def94aa0892c
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: b09a1af99eb8e0cc5fb618b1152bf124e511467e
+PODFILE CHECKSUM: a1aae580e7a96fc8ae1ffb84ca2b98610ce1174f
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.0.beta.1

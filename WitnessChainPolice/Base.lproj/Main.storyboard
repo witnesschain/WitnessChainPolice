@@ -28,13 +28,10 @@
                                     <action selector="loginActionWithSender:" destination="hDk-ao-yWJ" eventType="touchUpInside" id="kpw-be-gQo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WitnessChain Police" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atc-aU-Ab6">
-                                <rect key="frame" x="109" y="323" width="156" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vwk-Xv-xwZ">
+                                <rect key="frame" x="65" y="70" width="244" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lge-Vp-VXA"/>
@@ -46,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSo-eE-f5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-799" y="-734"/>
+            <point key="canvasLocation" x="-799.20000000000005" y="-734.48275862068976"/>
         </scene>
         <!--User Info View Controller-->
         <scene sceneID="I18-7b-oxo">
@@ -319,13 +316,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fb6-a7-qXG">
-                                <rect key="frame" x="16" y="323" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfa-ac-Ggk">
                                 <rect key="frame" x="110" y="565" width="155" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -342,16 +332,19 @@
                                     <action selector="GoBack:" destination="bsJ-I3-fbF" eventType="touchUpInside" id="L3z-LA-DNe"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zF6-5C-Hzo">
-                                <rect key="frame" x="16" y="58" width="343" height="249"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dyS-Dy-2IG" customClass="ImageSlideshow" customModule="WitnessChainPolice" customModuleProvider="target">
-                                <rect key="frame" x="67" y="403" width="240" height="128"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dyS-Dy-2IG" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="67" y="58" width="240" height="322"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fb6-a7-qXG">
+                                <rect key="frame" x="16" y="388" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLl-Cs-hN6">
-                                <rect key="frame" x="16" y="352" width="343" height="21"/>
+                                <rect key="frame" x="16" y="417" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -362,7 +355,6 @@
                         <viewLayoutGuide key="safeArea" id="1Ei-25-pcY"/>
                     </view>
                     <connections>
-                        <outlet property="ImageView" destination="zF6-5C-Hzo" id="Nf2-sd-W7m"/>
                         <outlet property="LocLabel" destination="Fb6-a7-qXG" id="kDc-IJ-NGy"/>
                         <outlet property="TimeLabel" destination="iLl-Cs-hN6" id="0Q7-cs-y3I"/>
                         <outlet property="approveButton" destination="Xfa-ac-Ggk" id="DvQ-gH-QeF"/>
@@ -379,9 +371,10 @@
         <image name="icons8-search-50.png" width="30" height="30"/>
         <image name="icons8-settings-50.png" width="30" height="30"/>
         <image name="icons8-us-dollar-50.png" width="30" height="30"/>
+        <image name="logo.png" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="0oa-g5-dn4"/>
-        <segue reference="Epe-q7-7HK"/>
+        <segue reference="mVO-5g-hH9"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,7 +13,7 @@ target 'WitnessChainPolice' do
   pod 'Firebase/Storage'
   pod 'Alamofire'
   pod 'SwiftLocation'
-  pod 'ImageSlideshow', '~> 1.5'
+  pod 'ImageSlideshow'
   pod 'ImageSlideshow/SDWebImage'
 
   # Pods for WitnessChainPolice

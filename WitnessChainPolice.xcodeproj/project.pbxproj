@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		32F27D949E2435F858B9EF5E /* Pods_WitnessChainPoliceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80555486C5D75197FCC035D /* Pods_WitnessChainPoliceUITests.framework */; };
 		4C8C47CC0DCAC5EC0D64E500 /* Pods_WitnessChainPolice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC3E184A3F81C5B05A4A391 /* Pods_WitnessChainPolice.framework */; };
+		FC0D66A7209CF2310065D449 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0D66A6209CF2310065D449 /* logo.png */; };
 		FC289A1B20812145003A7448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC289A1A20812145003A7448 /* AppDelegate.swift */; };
 		FC289A1D20812145003A7448 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC289A1C20812145003A7448 /* SettingsViewController.swift */; };
 		FC289A1F20812145003A7448 /* ListEvidenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC289A1E20812145003A7448 /* ListEvidenceViewController.swift */; };
@@ -47,6 +48,7 @@
 		8CC3E184A3F81C5B05A4A391 /* Pods_WitnessChainPolice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WitnessChainPolice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50AB3A84FD6B435A283F00D /* Pods-WitnessChainPolice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WitnessChainPolice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WitnessChainPolice/Pods-WitnessChainPolice.debug.xcconfig"; sourceTree = "<group>"; };
 		E80555486C5D75197FCC035D /* Pods_WitnessChainPoliceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WitnessChainPoliceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0D66A6209CF2310065D449 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Assets.xcassets/logo.png; sourceTree = "<group>"; };
 		FC289A1720812145003A7448 /* WitnessChainPolice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WitnessChainPolice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC289A1A20812145003A7448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC289A1C20812145003A7448 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				FCC0931D2088343500440C19 /* ApprovedListEvidenceViewController.swift */,
 				FC289A2020812145003A7448 /* Main.storyboard */,
 				FC5C7B48208C3B5B00A372BF /* ViewEvidenceController.swift */,
+				FC0D66A6209CF2310065D449 /* logo.png */,
 				FCC0932120883DC300440C19 /* EvidenceListViewCell.swift */,
 				FC289A2320812147003A7448 /* Assets.xcassets */,
 				FC6E4FBC208E52A000F1DBF4 /* icons8-search-50.png */,
@@ -254,6 +257,7 @@
 				FC6E4FBD208E52A000F1DBF4 /* icons8-settings-50.png in Resources */,
 				FC6E4FBE208E52A000F1DBF4 /* icons8-us-dollar-50.png in Resources */,
 				FC289A412081348E003A7448 /* GoogleService-Info.plist in Resources */,
+				FC0D66A7209CF2310065D449 /* logo.png in Resources */,
 				FC289A2420812147003A7448 /* Assets.xcassets in Resources */,
 				FC6E4FBF208E52A000F1DBF4 /* icons8-search-50.png in Resources */,
 				FC289A2220812145003A7448 /* Main.storyboard in Resources */,

@@ -77,8 +77,8 @@ class ListEvidenceViewController: UIViewController, UITableViewDataSource, UITab
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
-        cell.labelName.text = formatter.string(from: Date(timeIntervalSince1970: TimeInterval(Float(evidence!.time!)/10000)))
-        cell.labelLoc.text = "\(String(describing: evidence!.loc?.0 ?? 0.0)), \(String(describing: evidence!.loc?.1 ?? 0.0))"
+        cell.labelName.text = formatter.string(from: Date(timeIntervalSince1970: TimeInterval(Float(evidence!.time!))))
+        cell.labelLoc.text = "Location: \(String(describing: evidence!.loc?.0 ?? 0.0)), \(String(describing: evidence!.loc?.1 ?? 0.0))"
         let storageRef = self.storage.reference().child("evidence")
         
         let reference = storageRef.child(evidence!.images![0])
