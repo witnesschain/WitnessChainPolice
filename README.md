@@ -33,11 +33,11 @@ Then, plug in an iPhone to your computer, ensure that it is selected as the targ
 
 The app begins with a login screen. Enter your credentials, and create an account if you do not already have one.
 
-![Login Screen](images/signin.png)
+![Login Screen](images/signin.PNG)
 
 Then, link your account to your Ethereum public address. This will ensure your wallet is the same as your public one, if you already have one.
 
-![Public Key Screen](images/publickey.png)
+![Public Key Screen](images/publickey.PNG)
 
 Now, you should have arrived at the evidence screen. Here, you can view evidence submitted to your police jurisdiction. As an officer, you may scroll through the evidence and select one that seems like a ticket could be valid.
 
